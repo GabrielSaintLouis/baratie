@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10%;
+    box-shadow: 0 0 20px rgba(0,0,0,0,1);
+    z-index: 100;
+}
+.menu_icons {
+    width: 35px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    margin-left: -10%;
+}
+
+button img {
+    width: 20px;
+    margin-left: 10px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+.menu ul a {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #000;
+    text-decoration: 0;
+    position: relative;
+}
+.menu ul a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f7a800;
+    transition: 0.1s ease-out;
+}
+.menu ul a:hover::after {
+    width: 60px;
+}
+.header-end {
+    display: flex;
+    align-items: center;
+} 
+.header-end i {
+    margin-right: 20px;
+}
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 15px;
+    background-color: grey;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    transform: 0.2 ease-out;
+}
+
+button span {
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+}
+button:hover{
+    transform: scale(1.06);
+}
+#crown {
+    position: relative;
+    padding: 20px;
+}
+.login {
+    position: absolute;
+    right: -22px;
+    top: 60px;
+    width: 270px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    border-radius: 6px;  
+}
+.login button {
+    width: 100%;
+    background-color: grey;
+}
+hr{
+    border: 0;
+    margin: 30px 0;
+    background-color: #999;
+    width: 220px;
+    height: 1px;
+}
+.login p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.login button:last-child {
+    background-color: transparent;
+    color: grey;
+    border: 1px solid grey;
+}
+.login::after {
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    transform: rotate(50deg);
+}
+#crown:hover .login {
+    display: block;
+}
+
+/*home*/
+
+.home {
+    margin-top: 80px;
+    background-image: url('img1.webp');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* foods */
+
+
